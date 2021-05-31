@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sognando Casa Proj</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <img src="https://sognandocasashop.it/assets/images/icons/sognandocasa.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="main-deco flex">
+            <div></div>
+        </div>
+        <div class="main-content flex">
+
+
+            <div class="list-container flex">
+                <span>Sono un</span>
+                <button id="agent">Agente</button>
+                <button id="builder">Costruttore</button>
+                <button id="dealer">Rivenditore</button>
+                <button id="architect">Architetto</button>
+            </div>
+
+
+
+            <div class="agent-form hide">
+               <div class="agent-desc">
+                    <span>Vendi di più</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis, nobis quae temporibus perferendis quo esse ipsa libero labore ratione,tempore excepturi eligendi reiciendis repudiandae commodi, vitae magni voluptates quae alias. Expedita </p>
+                    <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit sunt doloribus consequatur explicabo tempora, voluptatem, illum nulla aliquam </p>
+                </div>
+               <div class="form flex">            
+                        <a class="back-button" href="#"><i class="fas fa-chevron-left"></i> Indietro</a>
+                        <form method="post" action="agent.php" id="agent-form">
+                            <input type="text" name="agent_name" placeholder="Nome" pattern="[A-Za-z]+"/><br />
+                            <input type="text" name="agent_surname" placeholder="Cognome" pattern="[A-Za-z]+"/><br />
+                            <input type="text" name="agent_list" placeholder="Lista Aziende" pattern="[A-Za-z0-9]+"/><br />
+                            <input type="number" name="agent_phone" placeholder="Telefono" pattern="[0-9]+"/><br />
+                            <input type="email" name="agent_email" placeholder="Email"  pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/><br />
+                            <button type="submit">VENDI DI PIU' CON NOI</button>
+                        </form>               
+               </div>
+            </div>
+
+
+            
+            <div class="builder-form hide">
+                <div class="builder-desc">
+                     <span>Vendi di più</span>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis, nobis quae temporibus perferendis quo esse ipsa libero labore ratione,tempore excepturi eligendi reiciendis repudiandae commodi, vitae magni voluptates quae alias. Expedita </p>
+                     <p>Alcuni vantaggi di Sognando casa sono:</p>
+                     <div class="flex">
+                         <div>
+                             <i class="far fa-check-square"></i>
+                         </div> 
+                         Lorem ipsum dolor sit amet consectetur,
+                     </div>
+                     <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                     <div class="flex">
+                         <div>
+                             <i class="far fa-check-square"></i>
+                         </div> 
+                         Lorem ipsum dolor sit amet consectetur,
+                     </div>
+                     
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit sunt doloribus consequatur explicabo tempora, voluptatem, illum nulla aliquam </p>
+                 </div>
+                <div class="form flex">            
+                         <a class="back-button" href="#"><i class="fas fa-chevron-left"></i> Indietro</a>
+                         <form method="post" action="builder.php" id="builder-form">
+                             <input type="text" name="builder_name" placeholder="Nome" pattern="[A-Za-z]+"/><br />                           
+                             <input type="text" name="builder_surname" placeholder="Cognome"pattern="[A-Za-z]+" /><br />                         
+                             <input type="text" name="builder_company" placeholder="Azienda"  pattern="[A-Za-z0-9]+"/><br />                
+                             <input type="text" name="builder_role" placeholder="Ruolo in Azienda" pattern="[A-Za-z]+"/><br />   
+                             <input type="number" name="builder_phone" placeholder="Telefono"  pattern="[0-9]+"/><br />
+                             <input type="email" name="builder_email" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/><br /> 
+                             <button type="submit">MIGLIORA I TUOI AFFARI</button>
+                         </form>               
+                </div>
+             </div>
+
+
+
+             <div class="dealer-form hide">
+                <div class="dealer-desc">
+                     <span>Fai crescere i tuoi affari</span>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis, nobis quae temporibus perferendis quo esse ipsa libero labore ratione,tempore excepturi eligendi reiciendis repudiandae commodi, vitae magni voluptates quae alias. Expedita </p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, sapiente perspiciatis ipsa tempore aliquam maiores suscipit eligendi nesciunt, cum nam mollitia eos illum? Quod magni illum eaque animi exercitationem molestiae?</p>
+                     <div class="flex">
+                         <div>
+                             <i class="far fa-check-square"></i>
+                         </div> 
+                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque provident ex in praesentium velit vitae, veniam vel aperiam incidunt placeat explicabo unde ratione vero a! Expedita ut quo ipsum eos?
+                     </div>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis, nobis quae temporibus perferendis quo esse ipsa libero labore ratione,tempore excepturi eligendi reiciendis repudiandae commodi, vitae magni voluptates quae alias. Expedita </p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit sunt doloribus consequatur explicabo tempora, voluptatem, illum nulla aliquam </p>
+                 </div>
+                <div class="form flex">            
+                         <a class="back-button" href="#"><i class="fas fa-chevron-left"></i> Indietro</a>
+                         <form method="post" action="dealer.php" id="dealer-form">
+                             <input type="text" name="dealer_name" placeholder="Nome" pattern="[A-Za-z]+"/><br />
+                             <input type="text" name="dealer_surname" placeholder="Cognome" pattern="[A-Za-z]+"/><br />
+                             <input type="text" name="dealer_company" placeholder="Azienda"  pattern="[A-Za-z0-9]+"/><br />
+                             <input type="text" name="dealer_role" placeholder="Ruolo in Azienda"pattern="[A-Za-z]+" /><br />
+                             <input type="number" name="dealer_phone" placeholder="Telefono"  pattern="[0-9]+"/><br />
+                             <input type="email" name="dealer_email" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/><br />
+                             <button type="submit" id="submit-dealer">VENDI DI PIU' CON NOI</button>
+                         </form>               
+                </div>
+             </div>
+
+
+
+             <div class="architect-form hide">
+                <div class="architect-desc">
+                     <span>Fai crescere i tuoi affari!</span>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quaerat doloribus possimus, commodi esse soluta voluptate earum veniam delectus dolores, perferendis hic molestiae illum. Necessitatibus cumque unde itaque suscipit perferendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium corrupti doloremque temporibus voluptatem id a dignissimos, tempora sunt? Nemo quo blanditiis fugit veritatis nisi, est enim aliquam ad odit deleniti?</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem impedit, commodi quo ratione quasi nam sit eligendi cumque amet quos asperiores labore deserunt sint? Ut nulla necessitatibus eaque assumenda. Laudantium veritatis, nobis quae temporibus perferendis quo esse ipsa libero labore ratione,tempore excepturi eligendi reiciendis repudiandae commodi, vitae magni voluptates quae alias. Expedita </p>
+                     <p>Ecco alcuni altri vantaggi nel lavorare con Sognando Casa:</p>
+                     <div class="flex">
+                         <div>
+                             <i class="far fa-check-square"></i>
+                         </div> 
+                         Lorem ipsum dolor sit amet consectetur,
+                     </div>
+                     <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <i class="far fa-check-square"></i>
+                        </div> 
+                        Lorem ipsum dolor sit amet consectetur,
+                    </div>
+                     <div class="flex">
+                         <div>
+                             <i class="far fa-check-square"></i>
+                         </div> 
+                         Lorem ipsum dolor sit amet consectetur,
+                     </div>
+                     
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit sunt doloribus consequatur explicabo tempora, voluptatem, illum nulla aliquam </p>
+                 </div>
+                <div class="form flex">            
+                         <a class="back-button" href="#"><i class="fas fa-chevron-left"></i> Back</a>
+                         <form method="post" action="architect.php" id="architect-form">
+                             <input type="text" name="architect_name" placeholder="Nome" pattern="[A-Za-z]+"/><br />
+                             <input type="text" name="architect_surname" placeholder="Cognome" pattern="[A-Za-z]+"/><br />
+                             <input type="text" name="architect_company" placeholder="Azienda" pattern="[A-Za-z0-9]+"/><br />
+                             <input type="text" name="architect_role" placeholder="Ruolo in Azienda" pattern="[A-Za-z]+"/><br />
+                             <input type="number" name="architect_phone" placeholder="Telefono" pattern="[0-9]+"/><br />
+                             <input type="email" name="architect_email" placeholder="Email"  pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/><br />
+                             <button type="submit">MIGLIORA I TUOI AFFARI</button>
+                         </form>               
+                </div>
+             </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-img">
+            <img src="https://sognandocasashop.it/assets/images/icons/sognandocasa.png" alt="">
+        </div>
+        <div class="footer-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi sit exercitationem ex perferendis laudantium dolore dolorum,
+        </div>
+
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

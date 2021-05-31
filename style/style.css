@@ -1,0 +1,476 @@
+/* default e utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.hide{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+/* default e utility */
+
+/* header part */
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-img,.footer-img{
+    width: 200px;
+    height: 120px;
+}
+.header-img img{
+    width: 100%;
+}
+/* header part */
+
+
+/* main part */
+main{
+    width: 100%;
+    min-height: calc(100vh - 400px);
+    background-color: #5D8848;
+}
+.main-deco{
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.main-deco div{
+    width: 80px;
+    height:80px;
+    position: absolute;
+    top: -40px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.main-content{
+    min-height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* main part firtst list */
+.main-content .list-container{
+    width: 80%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content .list-container button{
+ width: 40%;
+ height: 20%;
+ border: none;
+ background-color: rgba(255, 255, 255, 0.4);
+ color: #fff;
+ font-size: 30px;
+ font-weight: bold;
+ cursor: pointer;
+}
+.main-content .list-container span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width: 769.98px) { 
+    .main-content .list-container button{
+        width: 80%;
+       }
+
+ }
+/* main part firtst list */
+
+/* main part agent form */
+.main-content .agent-form{
+    width: 80%;
+    height: 600px;
+}
+.agent-form .agent-desc{
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 30px;
+    justify-content: space-around;
+}
+.agent-form .agent-desc span{
+    font-weight: bold;
+}
+.agent-form .agent-desc div i{
+    font-size: 60px;
+    margin-right: 20px;
+}
+.agent-form > .form{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.agent-form > .form .back-button{
+    justify-self: unset;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+.agent-form > .form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.agent-form > .form input,.agent-form > .form button{
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    border: none;
+}
+.agent-form > .form button{
+    height: 50px;
+    background-color: #fff;
+    color: #2A641A;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.agent-form > .form input::placeholder{
+    padding-left: 10px;
+    color: #575757;
+}
+
+@media (max-width: 769.98px) { 
+    .main-content .agent-form{
+        width: 80%;
+        height: 1200px;
+        flex-direction: column;
+    }
+    .agent-form .agent-desc{
+        width: 100%;
+        height:100%;
+    }
+    .agent-form > .form{
+        width: 100%;
+        height: 100%;
+    }
+    .agent-form > .form button{
+        font-size: 1.2em;
+    }
+}
+/* main part agent form */
+
+
+/* main part builder form */
+
+.main-content .builder-form{
+    width: 80%;
+    height: 800px;
+}
+.builder-form .builder-desc{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0 30px;
+    justify-content: space-around;
+}
+.builder-form .builder-desc span{
+   font-weight: bold;
+}
+.builder-form .builder-desc div i{
+    font-size: 30px;
+    margin-right: 20px;
+ }
+.builder-form > .form{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.builder-form > .form .back-button{
+  justify-self: unset;
+  align-self: flex-end;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+}
+.builder-form > .form form{
+    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.builder-form > .form input,.builder-form > .form button{
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  border: none;
+}
+.builder-form > .form button{
+    height: 50px;
+    background-color: #fff;
+    color: #2A641A;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+.builder-form > .form input::placeholder{
+   padding-left: 10px;
+   color: #575757;
+  }
+
+  @media (max-width: 769.98px) { 
+    .main-content .builder-form{
+        width: 80%;
+        min-height: 1500px;
+        flex-direction: column;
+    }
+    .builder-form .builder-desc{
+        width: 100%;
+        height:100%;
+    }
+    .builder-form > .form{
+        width: 100%;
+        height: 100%;
+    }
+    .builder-form > .form button{
+        font-size: 1.2em;
+    }
+}
+/* main part builder form */
+
+/* main part dealer form */
+
+.main-content .dealer-form{
+    width: 80%;
+    height: 700px;
+}
+.dealer-form .dealer-desc{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0 30px;
+    justify-content: space-around;
+}
+.dealer-form .dealer-desc span{
+   font-weight: bold;
+}
+.dealer-form .dealer-desc div i{
+    font-size: 60px;
+    margin-right: 20px;
+ }
+.dealer-form > .form{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.dealer-form > .form .back-button{
+  justify-self: unset;
+  align-self: flex-end;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+}
+.dealer-form > .form form{
+    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.dealer-form > .form input,.dealer-form > .form button{
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  border: none;
+}
+.dealer-form > .form button{
+    height: 50px;
+    background-color: #fff;
+    color: #2A641A;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+.dealer-form > .form input::placeholder{
+   padding-left: 10px;
+   color: #575757;
+  }
+
+  @media (max-width: 1200px) { 
+    .main-content .dealer-form{
+        width: 80%;
+        height: 1100px;
+    }
+}
+  @media (max-width:769.98px) { 
+    .main-content .dealer-form{
+        width: 80%;
+        height: 1500px;
+        font-size: 0.8em;
+        flex-direction: column;
+    }
+    .dealer-form .dealer-desc{
+        width: 100%;
+        height:100%;
+    }
+    .dealer-form > .form{
+        width: 100%;
+        height: 100%;
+    }
+    .dealer-form > .form button{
+        font-size: 1.2em;
+    }
+}
+/* main part dealer form */
+
+/* main part architect form */
+  
+.main-content .architect-form{
+    width: 80%;
+    height: 800px;
+}
+.architect-form .architect-desc{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0 30px;
+    justify-content: space-around;
+}
+.architect-form .architect-desc span{
+   font-weight: bold;
+}
+.architect-form .architect-desc div i{
+    font-size: 30px;
+    margin-right: 20px;
+ }
+.architect-form > .form{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.architect-form > .form .back-button{
+  justify-self: unset;
+  align-self: flex-end;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+}
+.architect-form > .form form{
+    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.architect-form > .form input,.architect-form > .form button{
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  border: none;
+}
+.architect-form > .form button{
+    height: 50px;
+    background-color: #fff;
+    color: #2A641A;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+.architect-form > .form input::placeholder{
+   padding-left: 10px;
+   color: #575757;
+  }
+  @media (max-width: 1200px) { 
+    .main-content .architect-form{
+        width: 80%;
+        height: 1500px;
+    }
+}
+  @media (max-width: 769.98px) { 
+    .main-content .architect-form{
+        width: 80%;
+        height: 1700px;
+        font-size: 0.8em;
+        flex-direction: column;
+    }
+    .architect-form .architect-desc{
+        width: 100%;
+        height:100%;
+    }
+    .architect-form > .form{
+        width: 100%;
+        height: 100%;
+    }
+    .architect-form > .form button{
+        font-size: 1.2em;
+    }
+}
+/* main part architect form */
+
+/* main end */
+
+
+
+/* footer part */
+
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.footer-content{
+    width: 200px;
+    height: 120px;
+    font-weight: bold;
+    color: #575757;
+}
+@media (max-width: 575.98px) { 
+    footer{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .footer-content{
+        width: 100%;
+        height: 120px;
+        font-weight: bold;
+        color: #575757;
+    }
+}
+/* footer part */
